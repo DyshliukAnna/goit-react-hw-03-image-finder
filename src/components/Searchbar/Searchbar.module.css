@@ -1,0 +1,20 @@
+.Searchbar{
+    background-color: blueviolet;
+
+}
+.Form{
+    display: flex;
+    flex-direction: row;
+    max-width: 50px;
+    max-height: 10px;
+
+}
+.Button{
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+
+}
+.Input{
+    background-color: #fff;
+
+}
