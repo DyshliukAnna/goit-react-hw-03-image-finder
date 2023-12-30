@@ -36,9 +36,9 @@ class Searchbar extends Component {
         <header className ={css.Searchbar}>
           <form className={css.Form} onSubmit={this.handleSearchSubmit}>
             <button type="submit" className={css.Button}>
-            <AiOutlineSearch
-              style={{ color: 'white', width: '5px', height: '25px' }}
-            />
+             <AiOutlineSearch
+              style={{ width: '25px', height: '25px' }}
+             />
             </button>
 
             <input
