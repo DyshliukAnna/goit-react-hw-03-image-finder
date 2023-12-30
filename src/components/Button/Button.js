@@ -1,14 +1,12 @@
 import css from './Button.module.css';
-import { Component } from 'react';
 
-class Button extends Component {
-    render() {
+const Button = ({onClick}) => {
         return (
         <>
-         <button type ="button" className ={css.Button}>Load more
+         <button type ="button" className ={css.Button} onClick={onClick}>Load more
          </button>
         </>
      )
  }
-}
+
 export default Button ;

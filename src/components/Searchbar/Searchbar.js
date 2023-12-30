@@ -1,6 +1,7 @@
 import css from './Searchbar.module.css';
 import { Component } from 'react';
 import Notiflix from 'notiflix';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 class Searchbar extends Component {
     state = {
@@ -35,16 +36,18 @@ class Searchbar extends Component {
         <header className ={css.Searchbar}>
           <form className={css.Form} onSubmit={this.handleSearchSubmit}>
             <button type="submit" className={css.Button}>
-              <span className={css.Button_label}>Search</span>
+            <AiOutlineSearch
+              style={{ color: 'white', width: '25px', height: '25px' }}
+            />
             </button>
 
             <input
               className={css.Input}
               type="text"
-              autocomplete="off"
+              autoComplete="off"
               name="searchQuery"
               value={this.state.searchQuery}
-              autofocus
+              autoFocus
               placeholder="Search images and photos"
               onChange={this.handleInputChange}
             />
