@@ -29,9 +29,9 @@ class Modal extends Component {
   render() {
     return (
       <>
-        <div className={css.Overlay}>
+        <div className={css.Overlay} onClick={this.handleClickOutside}>
           <div className={css.Modal}>
-            <img src="" alt="" />
+            <img src={this.props.largeImageURL} alt="" width={750} height={550} />
           </div>
         </div>
       </>

@@ -19,7 +19,7 @@ class ImageGalleryItem extends Component {
         return (
         <>
          <li className ={css.ImageGalleryItem} key={id}>
-            <img key={id} src ={webformatURL} alt ="" onClick={e => this.toggleModal(e, largeImageURL)}/>
+            <img  className ={css.ImageGalleryItem_image} key={id} src ={webformatURL} alt ="" onClick={e => this.toggleModal(e, largeImageURL)}/>
          </li>
          {toggleModal && (
           <Modal largeImageURL={largeImageURL} onClose={this.toggleModal} />
